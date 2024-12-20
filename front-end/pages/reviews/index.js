@@ -97,12 +97,12 @@ export default function Reviews() {
               </option>
             ))}
           </select>
-          <textarea
+          <input
             value={reviewText}
             onChange={(e) => setReviewText(e.target.value)}
             placeholder="Write your review..."
             className="w-full h-24 px-4 mt-4 bg-gray-50 text-gray-800 rounded-md shadow-md border border-gray-200 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-          ></textarea>
+          ></input>
           {error && <p className="text-red-500 mt-2 text-center">{error}</p>}
           <button
             onClick={handleCreateReview}
